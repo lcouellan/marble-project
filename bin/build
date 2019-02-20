@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -o nounset
+set -o errexit
+
+cp -n .env.dist .env
+
+docker-compose pull --ignore-pull-failures
+
+docker-compose build
+
+docker-compose up -d
