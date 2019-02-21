@@ -3,3 +3,7 @@ services:
   adminer:
     ports:
       - '${ADMINER_PORT}:8080'
+
+  node:
+    ports:
+      - '${NGINX_PORT}:8070'
