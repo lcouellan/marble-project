@@ -1,7 +1,10 @@
 {
-  "name": "knp-react-app",
+  "name": "marble_project",
   "version": "0.1.0",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "animejs": "^3.0.1",
     "autoprefixer": "^9.4.4",
     "crocks": "^0.11.1",
@@ -14,6 +17,7 @@
     "react-redux": "^6.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.2",
+    "react-transition-group": "^2.7.1",
     "redux": "^4.0.1",
     "redux-observable": "^1.0.0",
     "rxjs": "^6.3.3"
@@ -23,7 +27,7 @@
     "start-js": "react-scripts start",
     "build-css": "node-sass-chokidar --include-path ./node_modules ./src/Style/app.scss -o src/Style/",
     "build-autoprefixed-css": "postcss build/static/css/*.css --replace --use autoprefixer --verbose",
-    "watch-css": "node-sass-chokidar --include-path ./node_modules ./src/Style/app.scss -o src/Style/ --watch",
+    "watch-css": "node-sass-chokidar --watch --include-path ./node_modules ./src/Style/app.scss -o src/Style/ ",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js build-autoprefixed-css",
     "test": "react-scripts test --env=jsdom",
