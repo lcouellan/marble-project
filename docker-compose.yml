@@ -10,3 +10,7 @@ services:
   adminer:
     image: adminer
     restart: on-failure
+
+  node:
+    build:
+      context: apps/back
